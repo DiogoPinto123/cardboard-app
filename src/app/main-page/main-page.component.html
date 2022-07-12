@@ -1,3 +1,28 @@
 <body>
-  <h1>Cardboard App</h1>
+  <div id="top-zone">
+    <h1>Cardboard App</h1>
+    <a id="add-card" [routerLink]="'/create'">
+      <button
+        mat-fab
+        color="primary"
+        aria-label="Example icon button with a delete icon"
+      >
+        <mat-icon>add</mat-icon>
+      </button>
+    </a>
+  </div>
+  <div id="cards-zone">
+    <mat-card class="card">
+      <mat-card-title>TITLE</mat-card-title>
+      <mat-card-content>DESCRIPTION</mat-card-content>
+    </mat-card>
+    <mat-card class="card">
+      <mat-card-title>TASK 2</mat-card-title>
+      <mat-card-content>Start</mat-card-content>
+    </mat-card>
+    <mat-card class="card">
+      <mat-card-title>TASK 3</mat-card-title>
+      <mat-card-content>Start</mat-card-content>
+    </mat-card>
+  </div>
 </body>
